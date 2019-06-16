@@ -25,27 +25,6 @@ endif
 " Extend python.vim's syntax for use with Snakemake
 runtime! syntax/python.vim
 
-"
-" Snakemake rules, as of version 3.3
-"
-" XXX N.B. several of the new defs are missing from this table i.e.
-" subworkflow, touch etc
-"
-" rule       = "rule" (identifier | "") ":" ruleparams
-" include    = "include:" stringliteral
-" workdir    = "workdir:" stringliteral
-" ni         = NEWLINE INDENT
-" ruleparams = [ni input] [ni output] [ni params] [ni message] [ni threads] [ni (run | shell)] NEWLINE snakemake
-" input      = "input" ":" parameter_list
-" output     = "output" ":" parameter_list
-" params     = "params" ":" parameter_list
-" message    = "message" ":" stringliteral
-" threads    = "threads" ":" integer
-" resources  = "resources" ":" parameter_list
-" version    = "version" ":" statement
-" run        = "run" ":" ni statement
-" shell      = "shell" ":" stringliteral
-
 syn keyword pythonStatement	include workdir onsuccess onerror
 syn keyword pythonStatement	ruleorder localrules configfile
 syn keyword pythonStatement	touch protected temp wrapper
