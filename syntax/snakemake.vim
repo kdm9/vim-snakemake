@@ -43,4 +43,6 @@ syn sync match pythonSync grouphere NONE "^\s*\%(rule\|subworkflow\|checkpoint\)
 
 let b:current_syntax = "snakemake"
 
-" vim:set sw=2 sts=2 ts=8 noet:
+setlocal commentstring=#%s
+
+" vim:set sw=4 sts=4 ts=4 et:
